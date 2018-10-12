@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="79" height="63" viewBox="0 0 79 63">
+    <g fill="none" fill-rule="evenodd">
+        <text fill="#154B69" font-family="Rubik-Bold, Rubik" font-size="15" font-weight="bold" letter-spacing="1.6" transform="translate(-42)">
+            <tspan x="46.665" y="58">ЧИТАТЬ</tspan>
+        </text>
+        <path stroke="#154B69" stroke-width="4" d="M76.12 18C53.419 39.333 25.581 39.333 2.88 18 25.581-3.333 53.419-3.333 76.12 18zM2.88 18a77.807 77.807 0 0 1-1.473-1.42v2.84c.489-.483.98-.956 1.473-1.42zm73.24 0c.493.464.984.937 1.473 1.42v-2.84c-.489.483-.98.956-1.473 1.42z"/>
+        <path stroke="#154B69" stroke-width="4" d="M54 18.5C54 10.492 47.508 4 39.5 4S25 10.492 25 18.5 31.492 33 39.5 33 54 26.508 54 18.5z"/>
+    </g>
+</svg>

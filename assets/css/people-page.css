@@ -1,0 +1,588 @@
+.height {
+    min-height: 500px;
+}
+.static-page {
+    position: relative;
+}
+.static-page>.top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 495px);
+    z-index: 2;
+}
+.static-page>.top li {
+    position: relative;
+    width: 21%;
+}
+.static-page>.top li:nth-child(3) {
+    width: 37%;
+}
+.slider-btn {
+	display: block;
+    width: 100%;
+	height: 40px;
+	line-height: 42px;
+	text-align: center;
+	background-color: #fff;
+	text-transform: uppercase;
+	cursor: pointer;
+	-webkit-border-radius: 0 12px 0 0;
+	-moz-border-radius: 0 12px 0 0;
+	border-radius: 0 12px 0 0;
+	-webkit-box-shadow: 2px 0 5px 0 rgba(0,0,0,.4);
+	-moz-box-shadow: 2px 0 5px 0 rgba(0,0,0,.4);
+	box-shadow: 2px 0 5px 0 rgba(0,0,0,.4);
+    text-decoration: none;
+    color: #000;
+    letter-spacing: 1px;
+}
+.static-page>.top li:nth-child(1) {
+	z-index: 3;
+}
+.static-page>.top li:nth-child(2) {
+	z-index: 2;
+}
+.static-page>.top li:nth-child(3) {
+	z-index: 1;
+}
+.static-page>.top li:nth-child(4) {
+	z-index: 0;
+}
+.static-page>.top li:nth-child(4) .slider-btn {
+    -webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+.static-page>.top li:nth-child(2)::before,
+.static-page>.top li:nth-child(3)::before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 100%;
+	height: 40px;
+	width: 40px;
+	background-color: #fff;
+}
+.static-page .slider-btn.active {
+	color: #b51f08;
+}
+.owl-carousel .owl-nav {
+    height: 0;
+    margin: 0;
+}
+.owl-carousel .owl-prev {
+    display: none;
+}
+.owl-carousel .owl-next {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+	height: 260px;
+	width: 40px;
+	background-color: #154b69;
+	color: #fff;
+	font-size: 20px;
+	cursor: pointer;
+}
+.owl-carousel .owl-next i {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}
+#people {
+    width: calc(100% - 495px);
+}
+.item {
+    position: relative;
+    padding-top: 40px;
+    z-index: 1;
+}
+.item .image {
+    display: block;
+    position: relative;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.item .image .portrait {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 60px;
+    height: 100%;
+    background-position: top center;
+    background-repeat: no-repeat;
+    -webkit-background-size: auto 100%;
+    background-size: auto 100%;
+}
+.item .image .portrait.mendeleev {
+    background-image: url('../img/people/mendeleev/portrait-new.png');
+}
+.item .image .portrait.shukhov {
+    background-image: url('../img/people/shukhov/portrait-new.png');
+}
+.item .image .portrait.shukin {
+    background-image: url('../img/people/shukin/portrait-new.png');
+    width: 88%;
+    left: inherit;
+    right: 0;
+}
+.item .image .portrait.nobel {
+    background-image: url('../img/people/nobel/portrait-new.png');
+}
+.static-page>.right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 495px;
+    z-index: 3;
+}
+.static-page>.right>div {
+    position: relative;
+    height: 50%;
+}
+
+.static-page>.right .top.mendeleev {
+    background: url('../img/people/mendeleev/image-2.png') no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    display: block;
+    height: 50%;
+}
+.static-page>.right .top.shukhov {
+    background: url('../img/people/shukhov/image-2.png') no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    display: block;
+    height: 50%;
+}
+.static-page>.right .top.shukin {
+    background: url('../img/people/shukin/image-2.png') no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    display: block;
+    height: 50%;
+}
+.static-page>.right .top.nobel {
+    background: url('../img/people/nobel/image-2.png') no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    display: block;
+    height: 50%;
+}
+.static-page>.right .bottom {
+    position: relative;
+}
+.static-page>.right .link>div:nth-child(1) {
+    width: 165px;
+}
+.static-page>.right .link>div:nth-child(2) {
+    width: calc(100% - 165px);
+}
+.static-page>.right .link>a:nth-child(1) {
+    width: 165px;
+}
+.static-page>.right .link>a:nth-child(2) {
+    width: calc(100% - 165px);
+}
+.static-page>.right .name {
+    height: 165px;
+    padding: 0 40px;
+    background-color: #b51f08;
+    text-transform: uppercase;
+    color: #fff;
+    font: 38px 'Trattatello';
+    line-height: 165px;
+    letter-spacing: 1.8px;
+    display: inline-block;
+}
+.static-page>.right .name span {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    line-height: 43px;
+}
+.get-more {
+	display: block;
+    width: 165px;
+    height: 165px;
+	background: #fff url('../img/general-page/open.svg') no-repeat center;
+	-webkit-background-size: 80px;
+	background-size: 80px;
+}
+.static-page>.right .info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: calc(100% - 165px);
+}
+.static-page>.right .info>div {
+    position: relative;
+    height: 100%;
+}
+.static-page>.right .info>div:nth-child(1) {
+    width: 165px;
+}
+.static-page>.right .info>div:nth-child(2) {
+    width: calc(100% - 165px);
+}
+.static-page>.right .info>a {
+    position: relative;
+    height: 100%;
+}
+.static-page>.right .info>a:nth-child(1) {
+    width: 165px;
+}
+.static-page>.right .info>a:nth-child(2) {
+    width: calc(100% - 165px);
+}
+.static-page>.right .image.mendeleev {
+    background: url('../img/people/mendeleev/image-3.png') no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    display: block;
+}
+.static-page>.right .image.shukhov {
+    background: url('../img/people/shukhov/image-3.png') no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    display: block;
+}
+.static-page>.right .image.shukin {
+    background: url('../img/people/shukin/image-3.png') no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    display: block;
+}
+.static-page>.right .image.nobel {
+    background: url('../img/people/nobel/image-3.png') no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    display: block;
+}
+.static-page>.right .text {
+    padding: 40px 40px 20px 40px;
+    background-color: #154b69;
+    color: #fff;
+    overflow-y: auto;
+}
+.static-page>.right .text p {
+    margin-bottom: 0;
+    font: 18px 'Rubik-Regular';
+    line-height: 28px;
+}
+.static-page>.right .text p a {
+    color: #fff;
+    text-decoration: none;
+}
+.go-to-general {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 260px;
+    width: 40px;
+    background-color: #b51f08;
+    color: #fff;
+    text-transform: uppercase;
+    z-index: 4;
+    text-decoration: none;
+}
+.go-to-general span {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%) rotate(-90deg);
+    -moz-transform: translate(-50%,-50%) rotate(-90deg);
+    -ms-transform: translate(-50%,-50%) rotate(-90deg);
+    -o-transform: translate(-50%,-50%) rotate(-90deg);
+    transform: translate(-50%,-50%) rotate(-90deg);
+    font: 15px 'Rubik-Bold';
+    letter-spacing: 0.7px;
+    white-space: nowrap;
+}
+
+@media (max-width: 1150px) {
+    .slider-btn {
+        font-size: 12px;
+    }
+}
+@media (max-width: 1024px) {
+    .slider-btns {
+        display: none;
+    }
+    .item {
+        padding-top: 0;
+    }
+    .go-to-general {
+        bottom: auto;
+        top: 0;
+    }
+    #people {
+        width: 100%;
+    }
+    .static-page>.right {
+        top: auto;
+        left: 0;
+        right: auto;
+        width: calc(100% - 40px);
+    }
+    .static-page>.right .top {
+        display: none;
+    }
+    .static-page>.right .bottom::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .static-page>.right .link {
+        float: left;
+        width: 420px;
+    }
+    .static-page>.right .name {
+        padding: 0 10px;
+        font-size: 25px;
+        text-align: center;
+    }
+    .static-page>.right .name span {
+        line-height: 26px;
+    }
+    .static-page>.right .info {
+        float: left;
+        position: static;
+        width: calc(100% - 420px);
+        height: auto;
+    }
+    .static-page>.right .info>div {
+        position: static;
+        height: 210px;
+    }
+    .static-page>.right .info>a {
+        position: static;
+        height: 210px;
+    }
+    .get-more {
+        width: 210px;
+        height: 210px;
+    }
+    .static-page>.right .link>div:nth-child(1) {
+        width: 210px;
+    }
+    .static-page>.right .link>div:nth-child(2) {
+        width: 210px;
+        height: 210px;
+        line-height: 210px;
+    }
+    .static-page>.right .link>a:nth-child(1) {
+        width: 210px;
+    }
+    .static-page>.right .link>a:nth-child(2) {
+        width: 210px;
+        height: 210px;
+        line-height: 210px;
+    }
+    .item .image .portrait {
+        background-position: top center !important;
+    }
+    .owl-carousel .owl-next {
+        height: 210px;
+    }
+}
+@media (max-width: 850px) {
+    .static-page>.right .link,
+    .static-page>.right .info {
+        width: 100%;
+    }
+    .static-page>.right .link>div:nth-child(1) {
+        width: 165px;
+    }
+    .static-page>.right .link>div:nth-child(2) {
+        width: calc(100% - 165px);
+        height: 165px;
+        line-height: 165px;
+    }
+    .static-page>.right .link>a:nth-child(1) {
+        width: 165px;
+    }
+    .static-page>.right .link>a:nth-child(2) {
+        width: calc(100% - 165px);
+        height: 165px;
+        line-height: 165px;
+    }
+    .static-page>.right .info>div {
+        height: 268px;
+    }
+    .static-page>.right .info>a {
+        height: 268px;
+    }
+    .static-page>.right .info>div.text {
+        line-height: 208px;
+    }
+    .static-page>.right .info>div.text p {
+        display: inline-block;
+        line-height: 28px;
+    }
+    .static-page>.right .info>a.text {
+        line-height: 208px;
+    }
+    .static-page>.right .info>a.text p {
+        display: inline-block;
+        line-height: 28px;
+    }
+    .owl-carousel .owl-next {
+        height: 433px;
+    }
+    .get-more {
+        width: 165px;
+        height: 165px;
+    }
+    .item .image .portrait {
+        bottom: 433px;
+        top: 0;
+        -webkit-background-size: contain;
+        background-size: contain;
+    }
+}
+@media (max-width: 767px){
+    .static-page>.right .bottom {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    }
+    .static-page>.right .bottom>div>div:nth-child(1) {
+        float: right;
+    }
+    .static-page>.right .bottom>div>a:nth-child(1) {
+        float: right;
+    }
+    .go-to-general {
+        display: none;
+    }
+    .static-page>.right .info>div {
+        height: 110px;
+    }
+    .static-page>.right .info>a {
+        height: 110px;
+    }
+    .static-page>.right .text {
+        padding: 15px 10px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .static-page>.right .info>div:nth-child(1) {
+        width: 70px;
+    }
+    .static-page>.right .info>div:nth-child(2) {
+        width: calc(100% - 70px);
+    }
+    .static-page>.right .info>div.text {
+        line-height: normal;
+    }
+    .static-page>.right .info>div.text p {
+        line-height: 18px;
+    }
+    .static-page>.right .link>div:nth-child(2) {
+        width: calc(100% - 70px);
+        height: 62px;
+        line-height: 62px;
+        text-align: left;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 20px;
+    }
+    .static-page>.right .link>div:nth-child(1) {
+        width: 70px;
+    }
+    .static-page>.right .info>a:nth-child(1) {
+        width: 70px;
+    }
+    .static-page>.right .info>a:nth-child(2) {
+        width: calc(100% - 70px);
+    }
+    .static-page>.right .info>a.text {
+        line-height: normal;
+    }
+    .static-page>.right .info>a.text p {
+        line-height: 18px;
+    }
+    .static-page>.right .link>a:nth-child(2) {
+        width: calc(100% - 70px);
+        height: 62px;
+        line-height: 62px;
+        text-align: left;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 20px;
+    }
+    .static-page>.right .link>a:nth-child(1) {
+        width: 70px;
+    }
+    .get-more {
+        width: 70px;
+        height: 62px;
+        background: #fff url('../img/general-page/read@3x.jpg') no-repeat center;
+        -webkit-background-size: 60px;
+        background-size: 60px;
+    }
+    .owl-carousel .owl-next {
+        display: none;
+    }
+    .item .image .portrait {
+        bottom: 172px;
+        top: auto;
+        height: calc(100% - 172px);
+    }
+    .item .image .portrait {
+        background-position: bottom center !important;
+    }
+    .static-page>.right {
+        width: 100%;
+    }
+}
+
+
+@media (min-height: 800px) {
+    .item .image .portrait {
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+}
+@media (min-height: 700px) {
+    .item .image .portrait {
+        background-position: top center;
+    }
+}
+
+@media (min-width: 1440px) {
+    .item .image .portrait {
+        background-position: bottom center;
+        -webkit-background-size: contain;
+        background-size: contain;
+    }
+    .item .image .portrait.shukhov {
+        background-position: bottom right;
+    }
+    .item .image .portrait.shukin {
+        background-position: bottom right;
+    }
+    .item .image .portrait.mendeleev {
+        background-position: bottom right;
+    }
+}

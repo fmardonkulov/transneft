@@ -1,0 +1,41 @@
+@media screen and (min-width:1200px) {
+  .show-ipad,.show-ipad-mobile,.show-mobile {
+    display: none!important;
+  }
+
+  .show-desktop,.show-desktop-ipad,.show-desktop-mobile {
+    display: block;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1199px) {
+  .show-mobile {
+    display: none!important;
+  }
+
+  .show-ipad,.show-ipad-mobile {
+    display: block;
+  }
+
+  .show-desktop,.show-desktop-mobile {
+    display: none!important;
+  }
+
+  .show-desktop-ipad {
+    display: block;
+  }
+}
+
+@media screen and (min-width:320px) and (max-width:767px) {
+  .show-mobile {
+    display: block;
+  }
+
+  .show-desktop,.show-desktop-ipad,.show-ipad {
+    display: none!important;
+  }
+
+  .show-desktop-mobile,.show-ipad-mobile {
+    display: block;
+  }
+}

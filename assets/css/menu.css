@@ -1,0 +1,213 @@
+
+
+/* MENU &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
+
+.hidden-menu.hidden {
+    opacity: 0;
+    display: none;
+    visibility: hidden;
+}
+
+.menu {
+    height: 64px;
+    width: 100%;
+    text-align: center;
+    text-align: -webkit-center;
+    background: 0 0;
+    position: absolute;
+    top: 0;
+}
+
+.hidden-menu,
+.menu .toggle-menu,
+.menu .toggle-menu img {
+    -webkit-transition: all ease .2s;
+    -o-transition: all ease .2s;
+    transition: all ease .2s;
+}
+
+.hidden-menu {
+    overflow-y: auto;
+}
+.hidden-menu a {
+    text-decoration: none !important;
+}
+
+.menu .toggle-menu {
+    position: absolute;
+    right: 36px;
+    z-index: 10;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    display: block;
+    width: 24px;
+    height: 24px;
+    top: 20px;
+}
+
+.hidden-menu,
+.menu .toggle-menu img {
+    top: 0;
+}
+
+.menu .toggle-menu img {
+    width: 100%;
+    height: 100%;
+    right: 0;
+    position: absolute;
+    opacity: 0;
+}
+
+.menu .toggle-menu img.now-active {
+    opacity: 1;
+}
+
+.hidden-menu ul{
+    padding-left: 0;
+    list-style-type: none;
+    margin: 0;
+}
+
+.hidden-menu {
+    width: 100%;
+    height: auto;
+    /*min-height: 220px;*/
+    padding: 30px 0;
+    position: fixed;
+    left: 0;
+    z-index: 9;
+    background: #154b69;
+    opacity: 1;
+    visibility: visible;
+    max-height: 100%;
+}
+.hidden-menu__content {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+}
+.hidden-menu__content .left {
+    width: 250px;
+    padding-left: 50px;
+    border-right: 1px solid #fff;
+}
+.hidden-menu__content .right {
+    width: calc(100% - 250px);
+    padding: 0 150px 0 50px;
+}
+.hidden-menu__content .left>ul>li:not(:last-child) {
+    margin-bottom: 40px;
+}
+.hidden-menu__content .left>ul>li>a {
+    position: relative;
+    display: block;
+    font: 22px 'Rubik-Regular', sans-serif;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.hidden-menu__content .left>ul>li>a.active::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: calc(100% + 10px);
+    width: 40px;
+    height: 16px;
+    background-color: #ba2e19;
+}
+.hidden-menu__content .left>ul>li>.hidden-ul {
+    display: none;
+}
+.hidden-ul {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+.hidden-ul>div {
+    width: 33.333%;
+}
+.hidden-ul>div div a{
+    line-height: 1.5;
+}
+.hidden-ul>div div:not(:last-child) {
+    margin-bottom: 27px;
+}
+.hidden-ul>div a {
+    font: 12px 'Rubik-Regular';
+    color: #fff;
+    text-transform: uppercase;
+}
+.hidden-ul>div a:hover,
+.hidden-ul>div a.active {
+    color: #ba2e19;
+}
+
+@media (max-width: 1100px) {
+    .hidden-menu__content .right {
+        width: calc(100% - 160px);
+        padding-right: 50px;
+    }
+    .hidden-menu__content .left>ul>li>a {
+        font-size: 15px;
+    }
+    .hidden-menu__content .left>ul>li>a.active::after {
+        top: 4px;
+        width: 20px;
+        height: 10px;
+    }
+    .hidden-menu__content .left {
+        width: 160px;
+        padding-left: 30px;
+    }
+}
+@media (max-width: 992px) {
+    .hidden-ul {
+        display: block;
+    }
+    .hidden-ul>div {
+        width: 100%;
+    }
+}
+@media (max-width: 767px) {
+    .hidden-menu__content {
+        display: block;
+    }
+    .hidden-menu__content .left{
+        width: 100%;
+    }
+    .hidden-ul{
+        margin-top: 15px;
+    }
+    .hidden-ul>div div:not(:last-child){
+        margin-bottom: 10px;
+    }
+    /*    .hidden-menu__content .left {
+            width: 100%;
+            margin-bottom: 20px;
+            border-right: none;
+            padding: 0 50px;
+        }
+        .hidden-menu__content .left>ul {
+            text-align: center;
+        }
+        .hidden-menu__content .left>ul>li {
+            display: inline-block;
+            margin: 8px !important;
+        }
+        .hidden-menu__content .left>ul>li>a.active::after {
+            top: 100%;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 3px;
+        }
+        .hidden-menu__content .right {
+            width: 100%;
+            padding: 0 20px;
+        }*/
+}
+
+/* /MENU &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
